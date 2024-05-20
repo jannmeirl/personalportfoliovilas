@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Personal Portfolio Website </title>
+		<script src="https://kit.fontawesome.com/c9f8354fda.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styless.css"> 
+		<link rel="shortcut icon" type="image" href="logoe.png">
+		
+
+	</head>
+	<body>
+		<!----banner section starts---->
+		<section class="body">
+			<div class="bar">
+				<nav class="list">
+					<ul>
+						<li>
+							<a href="#home">
+							<i class="fa-solid fa-house"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#about">
+							<i class="fa-solid fa-user"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#portfolio">
+							<i class="fa-solid fa-file-lines"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#contact">
+							<i class="fa-solid fa-message"></i>>
+							</a>
+						</li>
+					</ul>
+			  	</nav>
+			</div>
+		</section>	
+		<!----banner section ends---->
+	
+	<div class="all">
+		<!----home section starts---->
+		<section class="home" id="home">
+			<div class="content">
+				<h1>DAWN LAURETH A. VILAS</h1>
+				<p>An aspiring student who wants to make a difference</p>
+				<a href="#about" class="button">FACTS ABOUT ME</a>
+			</div>
+		</section>
+		<!----home section ends---->
+
+		<!----about section starts---->
+		<section class="about" id="about">
+			<div id="container" class="main">
+			<script>
+				var i = 0; // Start point
+				var images = [];
+				var time = 1000;
+
+				// Image List
+			images[0] = 'img1.jpg';
+			images[1] = 'img2.jpg';
+			images[2] = 'img3.jpg';
+
+			// Change Image
+			function changeImg(){
+				document.slide.src = images[i];
+
+				if(i < images.length - 1){
+					i++;
+				} else {
+					i = 0;
+				}
+
+				setTimeout("changeImg()", time);
+			}
+
+			window.onload = changeImg;
+
+			</script>
+
+			<img name="slide">
+
+				<div class="about-text">
+					<h2>ABOUT ME</h2>
+					<p> <b>Name</b> <br> Dawn Laureth A. Vilas <br> <b>Birthday</b> <br> March 12, 2009 <br> <b>Age</b> <br> 15 years old <br> <b>Nationality</b> <br> Filipino <br> <b>Address</b> <br> Batinguel, Dumaguete City </p>
+				</div>
+			</div>
+		</section>
+		<!----about section ends---->
+
+
+
+		<!-----contact section starts----------->
+		<section class="contact" id="contact">
+			<div class="inside">
+				<h2>CONTACT ME</h2>
+			</div>
+			<div class="container">
+				<div class="contactInfo">
+					<div class="box">
+						<div class="icon"><i class="fas fa-map-marker"></i></div>
+						<div class="text">
+							<h3>Address</h3>
+							<p>Purok 7 Batinguel,<br>Dumaguete City,<br>Negros Oriental</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fas fa-phone"></i></div>
+						<div class="text">
+							<h3>Phone</h3>
+							<p>0961-468-secret</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="far fa-envelope"></i></div>
+						<div class="text">
+							<h3>Email</h3>
+							<p>dawnlaurethvilas@gmail.com</p>
+						</div>
+					</div>
+				</div>
+<!-----forms start----------->
+<div class="contactForm">
+	<form>
+		<h2>Send Message</h2>
+		<div class="inputBox">
+			<input type="text" required="required">
+			<span>Full name</span>
+		</div>
+		<div class="inputBox">
+			<input type="text" required="required">
+			<span>Email</span>
+		</div>
+		<div class="inputBox">
+			<textarea required="required"></textarea>
+			<span>Message</span>
+		</div>
+		<div class="inputbox">
+			<button class="button" type="sumbit">Send</button>
+		</div>
+	</form>
+</div>
+
+			<!-----forms end----------->
+
+		</section>
+		<section class="link">
+			<div class="rapper">
+				<div class="btn">
+					<div class="con">
+						<a href="https://www.facebook.com/dawnlaureth.vilas?mibextid=ZbWKwL" target="_blank">
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+					</div>
+					<span>Facebook</span>
+					</div>
+					<div class="btn">
+						<div class="con">
+							<a href="https://www.instagram.com/xoxo.awn_d?igsh=Yjg1Y3hkcWZyaHVw" target="_blank">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</div>
+					<span>Instagram</span>
+					</div>
+					<div class="btn">
+						<div class="con">
+							<a href="https://x.com/f_laureth?s=21&t=RNJN6FiULNl2R8PYm3yJIQ" target="_blank">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</div>
+					<span>Twitter</span>
+					</div>
+				</div>
+			</section>
+			<!-----contact section ends----------->
+		</div>
+		</body>
+	</html>
